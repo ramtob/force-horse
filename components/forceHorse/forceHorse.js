@@ -154,7 +154,7 @@ angular.module('forceHorse', [])
                 }
 
                 function successHandler(response){
-                    myInstance.config = _.assign(defaultConfig(), response);
+                    myInstance.config = _.assign(defaultConfig(), response.data);
                     myInstance.redraw();
                     return response;
                 }
